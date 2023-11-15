@@ -1,12 +1,17 @@
 import React from 'react'
 import { useState } from 'react'
-import ContactList, { dummyContacts } from './components/ContactList'
+import ContactList from './components/ContactList'
 
 export default function App() {
+  const [selectedContactId, setSelectedContactId] = useState(null);
 
   return (
     <>
-      <ContactList contacts ={dummyContacts} />
+      {selectedContactId ? (
+        <div>Selected Contact View</div>
+      ) : (
+        <ContactList />
+      )}
     </>
   );
 }
