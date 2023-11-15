@@ -1,11 +1,11 @@
 import React from 'react'
 import { useState } from 'react'
+import ContactList from './components/ContactList'
 
-function App() {
+export default function App() {
   return (
-<h1>Hello World</h1>
-
-  )
-};
-
-export default App
+    <>
+      <ContactList />
+    </>
+  );
+}
