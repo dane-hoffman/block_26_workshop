@@ -1,6 +1,12 @@
 import React from 'react'
-import ContactList, { dummyContacts } from './components/ContactList'
 
-export default function ContactRow () {
-    
-}
+
+export default function ContactRow({ contact }) {
+    return (
+      <tr>
+        <td>{contact.name}</td>
+        <td>{contact.email}</td>
+        <td>{contact.phone}</td>
+      </tr>
+    );
+  }
